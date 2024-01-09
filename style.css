@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    color: #FFFFFF;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-desktop.svg);
+    margin: 0;
+}
+@media screen and (max-width: 480px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+    }
+    header img {
+        width: 125px;
+    }
+    main {
+        width: 100%;
+        padding: 15px 35px 35px 35px;
+    }
+    main img {
+        width: 95%;
+    }
+    section {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    button {
+        margin: auto;
+        width: 200px;
+        height: 40px;
+    }
+    footer {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        padding: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 480px) {
+    header img {
+        width: 215px;
+    }
+    main {
+        display: flex;
+        width: 100%;
+        padding-left: 35px;
+        margin-top: 25px;
+    }
+    main img {
+        width: 55%;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        width: 42.5%;
+        height: 100%;
+        padding: 50px;
+    }
+    button {
+        width: 165px;
+        height: 45px;
+    }
+    footer {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        padding: 60px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+p, button {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    width: 100%;
+    padding: 35px;
+}
+button {
+    color: hsl(257, 40%, 49%);
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px #000000;
+    border: none;
+    margin-top: 15px;
+    transition: all 0.3s ease 0s;
+}
+button:hover {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: hsl(300, 69%, 71%);
+}
+.social-media {
+    padding: 8.5px;
+    margin: 7.5px;
+    border: 1px solid #FFFFFF;
+    border-radius: 17px;
+    transition: all 0.3s ease 0s;
+}
+.social-media:hover {
+    cursor: pointer;
+    border-color: hsl(300, 69%, 71%);
+}
+.social-media img {
+    position: relative;
+    left: 0.5px;
+    top:  1px;
+    transition: display 0.3s ease 0s;
+}
+.social-media img[src$="-sm.svg"] {
+    display: none;
+}
+.social-media:hover img[src$="-i.svg"] {
+    display: none;
+}
+.social-media:hover img[src$="-sm.svg"] {
+    display: block;
+}
