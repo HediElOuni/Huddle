@@ -15,8 +15,8 @@
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/HediElOuni/Huddle
+- Live Site URL: https://hedielouni.github.io/Huddle/
 
 ## My process
 
